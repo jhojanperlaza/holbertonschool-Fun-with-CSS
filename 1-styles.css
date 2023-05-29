@@ -1,0 +1,20 @@
+a {
+  position: relative;
+  text-decoration: none;
+  color: #a71c3d;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 0.2rem;
+  background-color: #a71c3d;
+  transition: width 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
